@@ -1,0 +1,41 @@
+.servicios_card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+  
+  .main-servicios h1 {
+    text-align: center;
+  }
+  
+  .main-servicios {
+    min-height: auto;
+  }
+  
+  .servicios {
+    width: 50%;
+    font-size: 30px;
+  }
+  
+  .servicios article {
+    border: solid;
+    border-radius: 25px;
+  }
+  
+  .lista {
+    font-size: 23px;
+    display: grid;
+    justify-content: center;
+    margin: auto;
+    padding: 30px;
+    border-radius: 20px;
+    border: solid black;
+  }
+  
+  .card-header {
+    font-size: 40px;
+  }
+  
+  .card-body {
+    font-size: 20px;
+  }

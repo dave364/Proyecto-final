@@ -1,0 +1,25 @@
+.nosotros-main {
+    min-height: 1454px;
+  }
+  
+  .nosotros article {
+    width: 50%;
+    text-align: center;
+    float: left;
+    height: 600px;
+  }
+  
+  .nosotros article p {
+    font-size: 31px;
+    padding: 30px;
+    text-align: justify;
+    @extend .borde;
+  }
+  
+  .nosotros article img {
+    @extend .borde;
+  }
+
+ /* background-image: linear-gradient(328deg, rgb(118, 110, 110), rgb(45 38 38));
+    border: solid black;
+    border-radius: 20px;*/

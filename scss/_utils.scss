@@ -1,0 +1,25 @@
+.borde {
+    border: solid black;
+    border-radius: 20px;
+}
+
+@mixin cuadro-inicio() {
+    .inicio {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 5px;
+        .card {
+            width: 95%;
+            @extend .borde;
+            &-img-top {
+                max-height: 450px;
+                max-width: 450px;
+                margin: auto;
+                border-radius: 20px;
+            }
+            &-body {
+                font-size: 20px;
+            }
+        }
+    }
+}

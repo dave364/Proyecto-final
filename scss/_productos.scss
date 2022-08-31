@@ -1,0 +1,28 @@
+ /* h1.productos {
+    margin: auto;
+  }
+  
+  .productos article {
+    width: 33%;
+    text-align: center;
+    float: left;
+    height: 600px;
+  }
+  
+  .productos img {
+    max-height: 450px;
+    max-width: 450px;
+    border-radius: 20px;
+  }
+  
+  .main-productos {
+    text-align: center;
+  }*/
+  h1.productos {
+    text-align: center;
+  }
+  .card-body { 
+    background-image: $fondo-menu;
+      border-radius: 1px 1px 16px 16px;
+     }
+  @include cuadro-inicio();

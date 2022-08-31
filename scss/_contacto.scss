@@ -1,0 +1,48 @@
+.contacto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .contacto iframe {
+    @extend .borde;
+  }
+  
+  .form-register {
+    width: 400px;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: content-box;
+    border: solid $secondary;
+  }
+  
+  .form-register h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align-last: center;
+    color: $secondary;
+  }
+  
+  .controls {
+    width: 100%;
+    color: $primary;
+    background: $secondary;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid grey;
+  }
+  
+  .form-register .botons {
+    width: 100%;
+    padding: 4px;
+    margin: 1px 0;
+    color: $primary;
+    background: $secondary;
+  }
+  
+  .contacto article {
+    text-align: center;
+    height: 500px;
+  }
