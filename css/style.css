@@ -10,6 +10,7 @@
 
 body {
   background-image: url("../img/fondo_1.jpg");
+  opacity: 5;
   color: #FFF;
 }
 
@@ -70,6 +71,7 @@ nav.index {
 
 nav a {
   color: #000000;
+  -webkit-text-stroke: 1px #FFF;
 }
 
 p {
@@ -79,14 +81,21 @@ p {
 h1 {
   font-size: 90px;
   color: #000000;
+  -webkit-text-stroke: 1px #FFF;
 }
 
 h3 {
   color: #000000;
+  -webkit-text-stroke: 1px #FFF;
 }
 
 h2 {
   color: #000000;
+  -webkit-text-stroke: 1px #FFF;
+}
+
+h5 {
+  -webkit-text-stroke: 1px #000000;
 }
 
 .texto-animado {

@@ -5,6 +5,7 @@
   
   body {
     background-image: $fondo;
+    opacity: $opacity;
     color: $primary;
   }
   
@@ -66,6 +67,8 @@
   
   nav a {
     color: $secondary;
+    -webkit-text-stroke: 1px $primary;
+    
   }
   
   p {
@@ -75,14 +78,21 @@
   h1 {
     font-size: 90px;
     color: $secondary;
+    -webkit-text-stroke: 1px $primary;
   }
   
   h3 {
     color: $secondary;
+    -webkit-text-stroke: 1px $primary;
   }
   
   h2 {
     color: $secondary;
+    -webkit-text-stroke: 1px $primary;
+  }
+
+  h5 {
+    -webkit-text-stroke: 1px $secondary;
   }
   
   .texto-animado {
