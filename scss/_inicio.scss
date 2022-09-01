@@ -4,8 +4,8 @@
   }
   
   body {
-    background-image: $fondo;
-    opacity: $opacity;
+    background: $fondo;
+    background-size: 144%;
     color: $primary;
   }
   
@@ -62,12 +62,11 @@
   nav.index {    
     border: solid $secondary;
     border-radius: 20px;
-
   }
   
-  nav a {
-    color: $secondary;
+  nav a:hover {
     -webkit-text-stroke: 1px $primary;
+
     
   }
   

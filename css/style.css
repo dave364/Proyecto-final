@@ -9,8 +9,8 @@
 }
 
 body {
-  background-image: url("../img/fondo_1.jpg");
-  opacity: 5;
+  background: url("../img/fondo_1.jpg");
+  background-size: 144%;
   color: #FFF;
 }
 
@@ -69,8 +69,7 @@ nav.index {
   border-radius: 20px;
 }
 
-nav a {
-  color: #000000;
+nav a:hover {
   -webkit-text-stroke: 1px #FFF;
 }
 
@@ -162,13 +161,14 @@ footer h3 {
   width: 50%;
   text-align: center;
   float: left;
-  height: 600px;
+  height: 1040px;
 }
 
 .nosotros article p {
-  font-size: 31px;
-  padding: 30px;
+  font-size: 40px;
+  padding: 60px;
   text-align: justify;
+  margin: 50px;
 }
 
 /* background-image: linear-gradient(328deg, rgb(118, 110, 110), rgb(45 38 38));

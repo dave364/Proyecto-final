@@ -6,13 +6,14 @@
     width: 50%;
     text-align: center;
     float: left;
-    height: 600px;
+    height: 1040px;
   }
   
   .nosotros article p {
-    font-size: 31px;
-    padding: 30px;
+    font-size: 40px;
+    padding: 60px;
     text-align: justify;
+    margin: 50px;
     @extend .borde;
   }
   
