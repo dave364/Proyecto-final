@@ -4,7 +4,7 @@
 }
 
 * {
-  font-family: fantasy;
+  font-family: "Roboto Condensed", sans-serif;
   box-sizing: border-box;
 }
 
@@ -373,7 +373,7 @@ main.contacto-main {
     justify-content: center;
   }
   h1 {
-    font-size: 60px;
+    font-size: 40px;
   }
   div.container-fluid {
     border-radius: 17px;
