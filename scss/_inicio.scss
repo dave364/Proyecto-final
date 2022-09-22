@@ -10,13 +10,15 @@
   }
   
   main {
-    margin: 40px 0;
-    min-height: 1250px;
+    margin: 10px 0;
   }
   
   .titulo article {
     text-align: center;
     height: 500px;
+    margin: auto;
+    width: min-content;
+    padding: 50px;
   }
   
   .titulo iframe {
@@ -38,7 +40,7 @@
   }
   
   nav img {
-    max-height: 80px;
+    max-height: 70px;
   }
   
   .content-flex {
@@ -66,7 +68,9 @@
   
   nav a:hover {
     -webkit-text-stroke: 1px $primary;
-
+     a.nav-link {
+      color: rgb(0 0 0) !important;
+    }
     
   }
   

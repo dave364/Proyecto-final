@@ -1,5 +1,5 @@
 .nosotros-main {
-    min-height: 1454px;
+    min-height: 1086px;
   }
   
   .nosotros article {
@@ -15,6 +15,7 @@
     text-align: justify;
     margin: 50px;
     @extend .borde;
+    background-image: $fondo-menu;
   }
   
   .nosotros article img {

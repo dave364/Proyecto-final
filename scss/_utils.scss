@@ -9,13 +9,13 @@
         grid-template-columns: 1fr 1fr 1fr;
         padding: 5px;
         .card {
-            width: 95%;
+            width: 99%;
             @extend .borde;
             &-img-top {
-                max-height: 450px;
-                max-width: 450px;
+                max-height: 500px;
+                max-width: 623px;
                 margin: auto;
-                border-radius: 20px;
+                border-radius: 18px 18px 0px 0px;
             }
             &-body {
                 font-size: 20px;
