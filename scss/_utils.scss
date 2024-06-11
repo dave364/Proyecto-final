@@ -3,22 +3,44 @@
     border-radius: 20px;
 }
 
+@mixin border-style {
+    border: solid $border-color;
+    border-radius: $border-radius;
+}
+
+@mixin card-layout {
+    width: 99%;
+    @include border-style;
+}
+
+@mixin card-img-style {
+    width: 100%; 
+    height: auto;
+    max-height: $card-max-height;
+    max-width: $card-max-width;
+    margin: auto;
+    border-radius: $border-radius $border-radius 0 0;
+}
+
+@mixin card-body-style {
+    font-size: $card-font-size;
+}
+
 @mixin cuadro-inicio() {
     .inicio {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat(3, 1fr);
         padding: 5px;
+
         .card {
-            width: 99%;
-            @extend .borde;
+            @include card-layout;
+
             &-img-top {
-                max-height: 500px;
-                max-width: 623px;
-                margin: auto;
-                border-radius: 18px 18px 0px 0px;
+                @include card-img-style;
             }
+
             &-body {
-                font-size: 20px;
+                @include card-body-style;
             }
         }
     }

@@ -1,52 +1,87 @@
 .contacto {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.contacto iframe {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.form-register {
+  width: 400px;
+  padding: 30px;
+  margin: auto;
+  margin-top: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  border: 1px solid $secondary;
+  border-radius: 20px; 
+}
+
+.form-register h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: $secondary;
+}
+
+.controls {
+  width: 100%;
+  color: $primary;
+  background: $secondary;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid grey;
+}
+
+.botons {
+  width: 49%;
+  padding: 4px;
+  margin: 1px 0;
+  color: $primary;
+  background: $secondary;
+  border: none; 
+  border-radius: 4px;
+  cursor: pointer; 
+}
+
+.botons:hover {
+  background: darken($secondary, 10%);
+}
+
+.botons:focus {
+  outline: none;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.contacto article {
+  padding: 60px;
+  text-align: center;
+  height: fit-content;
+  margin-bottom: 20px; 
+}
+
+main.contacto-main {
+  min-height: 100vh;
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+}
+
+@media (max-width: 768px) {
+  .contacto {
+    grid-template-columns: 1fr;
   }
 
-  .contacto iframe {
-    @extend .borde;
-  }
-  
   .form-register {
-    width: 400px;
-    padding: 30px;
-    margin: auto;
-    margin-top: 100px;
-    font-family: Arial, Helvetica, sans-serif;
-    box-sizing: content-box;
-    border: solid $secondary;
-  }
-  
-  .form-register h2 {
-    font-size: 22px;
-    margin-bottom: 20px;
-    text-align-last: center;
-    color: $secondary;
+    width: 100%; 
+    margin-top: 20px; 
+    border-radius: 0; 
   }
 
-  main.contacto-main {
-    min-height: 1083px;
+  .botons {
+    width: 100%; 
   }
-  
-  .controls {
-    width: 100%;
-    color: $primary;
-    background: $secondary;
-    padding: 10px;
-    border-radius: 4px;
-    margin-bottom: 16px;
-    border: 1px solid grey;
-  }
-  
-  .form-register .botons {
-    width: 100%;
-    padding: 4px;
-    margin: 1px 0;
-    color: $primary;
-    background: $secondary;
-  }
-  
-  .contacto article {
-    text-align: center;
-    height: 500px;
-  }
+}

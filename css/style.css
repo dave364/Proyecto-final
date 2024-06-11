@@ -1,4 +1,5 @@
-.borde, .contacto iframe, .nosotros article img, .nosotros article p, .inicio .card, .titulo iframe {
+@charset "UTF-8";
+.borde, .nosotros article img, .titulo iframe {
   border: solid black;
   border-radius: 20px;
 }
@@ -10,7 +11,8 @@
 
 body {
   background: url("../img/fondo_1.jpg");
-  background-size: 144%;
+  background-size: cover;
+  background-repeat: repeat;
   color: #FFF;
 }
 
@@ -128,58 +130,97 @@ h5 {
 
 .inicio {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   padding: 5px;
 }
 .inicio .card {
   width: 99%;
+  border: solid black;
+  border-radius: 20px;
 }
 .inicio .card-img-top {
-  max-height: 500px;
+  width: 100%;
+  height: auto;
+  max-height: 620px;
   max-width: 623px;
   margin: auto;
-  border-radius: 18px 18px 0px 0px;
+  border-radius: 20px 20px 0 0;
 }
 .inicio .card-body {
   font-size: 20px;
 }
 
 footer {
-  border: solid #000000;
+  border: 1px solid #000000;
   text-align: center;
   position: absolute;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
+  padding: 20px 0;
 }
 
 footer h3 {
   width: 100%;
 }
 
+footer div {
+  margin-top: 10px;
+}
+
+footer a {
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+footer img {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s ease;
+}
+
+footer img:hover {
+  transform: scale(1.1);
+}
+
 .nosotros-main {
-  min-height: 1086px;
+  min-height: 800px; /* Asegúrate de que esta altura sea necesaria */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nosotros {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px; /* Ajusta según sea necesario */
 }
 
 .nosotros article {
   width: 50%;
-  text-align: center;
-  float: left;
-  height: 1040px;
+  padding: 20px; /* Añade un poco de espacio alrededor del contenido */
+  box-sizing: border-box; /* Asegúrate de que el padding se incluya en el ancho */
+}
+
+.nosotros article h1 {
+  text-align: center; /* Centra el título */
 }
 
 .nosotros article p {
-  font-size: 40px;
-  padding: 60px;
+  font-size: 20px; /* Reduce el tamaño del texto para que sea más legible */
   text-align: justify;
-  margin: 50px;
-  background-image: linear-gradient(rgba(118, 110, 110, 0.55), rgb(45, 38, 38));
 }
 
-/* background-image: linear-gradient(328deg, rgb(118, 110, 110), rgb(45 38 38));
-   border: solid black;
-   border-radius: 20px;*/
+.nosotros article img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
 /* h1.productos {
    margin: auto;
  }
@@ -211,17 +252,21 @@ h1.productos {
 
 .inicio {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   padding: 5px;
 }
 .inicio .card {
   width: 99%;
+  border: solid black;
+  border-radius: 20px;
 }
 .inicio .card-img-top {
-  max-height: 500px;
+  width: 100%;
+  height: auto;
+  max-height: 620px;
   max-width: 623px;
   margin: auto;
-  border-radius: 18px 18px 0px 0px;
+  border-radius: 20px 20px 0 0;
 }
 .inicio .card-body {
   font-size: 20px;
@@ -272,27 +317,29 @@ h1.productos {
 .contacto {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.contacto iframe {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 .form-register {
   width: 400px;
   padding: 30px;
   margin: auto;
-  margin-top: 100px;
+  margin-top: 50px;
   font-family: Arial, Helvetica, sans-serif;
-  box-sizing: content-box;
-  border: solid #000000;
+  box-sizing: border-box;
+  border: 1px solid #000000;
+  border-radius: 20px;
 }
 
 .form-register h2 {
   font-size: 22px;
   margin-bottom: 20px;
-  text-align-last: center;
+  text-align: center;
   color: #000000;
-}
-
-main.contacto-main {
-  min-height: 1083px;
 }
 
 .controls {
@@ -305,19 +352,53 @@ main.contacto-main {
   border: 1px solid grey;
 }
 
-.form-register .botons {
-  width: 100%;
+.botons {
+  width: 49%;
   padding: 4px;
   margin: 1px 0;
   color: #FFF;
   background: #000000;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.botons:hover {
+  background: black;
+}
+
+.botons:focus {
+  outline: none;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
 }
 
 .contacto article {
+  padding: 60px;
   text-align: center;
-  height: 500px;
+  height: fit-content;
+  margin-bottom: 20px;
 }
 
+main.contacto-main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .contacto {
+    grid-template-columns: 1fr;
+  }
+  .form-register {
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 0;
+  }
+  .botons {
+    width: 100%;
+  }
+}
 /*RESPONSIVE.DESING*/
 /*.TABLET.*/
 /* index */

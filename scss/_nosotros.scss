@@ -1,27 +1,38 @@
 .nosotros-main {
-    min-height: 1086px;
-  }
-  
-  .nosotros article {
-    width: 50%;
-    text-align: center;
-    float: left;
-    height: 1040px;
-  }
-  
-  .nosotros article p {
-    font-size: 40px;
-    padding: 60px;
-    text-align: justify;
-    margin: 50px;
-    @extend .borde;
-    background-image: $fondo-menu;
-  }
-  
-  .nosotros article img {
-    @extend .borde;
-  }
+  min-height: 800px; /* Asegúrate de que esta altura sea necesaria */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
- /* background-image: linear-gradient(328deg, rgb(118, 110, 110), rgb(45 38 38));
-    border: solid black;
-    border-radius: 20px;*/
+.nosotros {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px; /* Ajusta según sea necesario */
+}
+
+.nosotros article {
+  width: 50%;
+  padding: 20px; /* Añade un poco de espacio alrededor del contenido */
+  box-sizing: border-box; /* Asegúrate de que el padding se incluya en el ancho */
+}
+
+.nosotros article h1 {
+  text-align: center; /* Centra el título */
+}
+
+.nosotros article p {
+  font-size: 20px; /* Reduce el tamaño del texto para que sea más legible */
+  text-align: justify;
+
+}
+
+.nosotros article img {
+  @extend .borde;
+  display: block; 
+  max-width: 100%; 
+  height: auto; 
+  margin: 0 auto;
+}
