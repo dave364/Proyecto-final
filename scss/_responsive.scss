@@ -2,6 +2,14 @@
 /*.TABLET.*/
 /* index */
 @media (min-width: 600px) and (max-width: 1023px) {
+
+  body {
+    background: $fondo;
+      background-size: cover; 
+    background-repeat: repeat;
+    color: $primary;
+  }
+
     div.container-fluid {
       border-radius: 17px;
       background-image: linear-gradient(rgb(118, 110, 110), rgb(45, 38, 38));
