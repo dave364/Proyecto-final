@@ -6,11 +6,6 @@
   border-radius: 20px;
 }
 
-* {
-  font-family: "Roboto Condensed", sans-serif;
-  box-sizing: border-box;
-}
-
 body {
   background: url("../img/fondo_1.jpg");
   background-size: cover;
@@ -113,21 +108,16 @@ p {
 h1 {
   font-size: 90px;
   color: #000000;
-  -webkit-text-stroke: 1px #FFF;
+  /*-webkit-text-stroke: 1px $primary;*/
 }
 
 h3 {
   color: #000000;
-  -webkit-text-stroke: 1px #FFF;
+  /*-webkit-text-stroke: 1px $primary;*/
 }
 
 h2 {
   color: #000000;
-  -webkit-text-stroke: 1px #FFF;
-}
-
-h5 {
-  -webkit-text-stroke: 1px #000000;
 }
 
 .texto-animado {
