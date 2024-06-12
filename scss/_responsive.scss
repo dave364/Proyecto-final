@@ -1,6 +1,49 @@
 /*RESPONSIVE.DESING*/
 /*.TABLET.*/
 /* index */
+
+@media (max-width: 1023px) {
+  .navbar-nav {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+
+      .nav-item {
+          margin: 10px 0;
+
+          .nav-link {
+              font-size: 1.2rem;
+              width: 100%;
+              text-align: center;
+          }
+      }
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar-brand {
+      justify-content: center;
+      text-align: center;
+      width: 100%;
+      margin-bottom: 10px;
+  }
+
+  .navbar-toggler {
+      margin: 0 auto 10px;
+  }
+
+  .navbar-nav {
+      .nav-item {
+          .nav-link {
+              padding: 10px 20px;
+              font-size: 1.2rem;
+              width: 100%;
+              text-align: center;
+          }
+      }
+  }
+}
+
 @media (min-width: 600px) and (max-width: 1023px) {
 
   body {
@@ -64,10 +107,7 @@
       font-size: 40px;
       color: black;
     }
-    div.container-fluid {
-      border-radius: 17px;
-      background-image: linear-gradient(rgb(118, 110, 110), rgb(45, 38, 38));
-    }
+
     main section div.card {
       width: 20rem;
     }
@@ -89,6 +129,7 @@
     section.inicio {
       grid-template-columns: 1fr;
       padding: 27px;
+      gap: 20px;
     }
     section.inicio img {
       max-width: 100%;

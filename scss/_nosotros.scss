@@ -1,5 +1,5 @@
 .nosotros-main {
-  min-height: 800px; /* Asegúrate de que esta altura sea necesaria */
+  min-height: 800px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,21 +10,21 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  max-width: 1200px; /* Ajusta según sea necesario */
+  max-width: 1200px;
 }
 
 .nosotros article {
   width: 50%;
-  padding: 20px; /* Añade un poco de espacio alrededor del contenido */
-  box-sizing: border-box; /* Asegúrate de que el padding se incluya en el ancho */
+  padding: 20px;
+  box-sizing: border-box; 
 }
 
 .nosotros article h1 {
-  text-align: center; /* Centra el título */
+  text-align: center; 
 }
 
 .nosotros article p {
-  font-size: 20px; /* Reduce el tamaño del texto para que sea más legible */
+  font-size: 20px; 
   text-align: justify;
 
 }

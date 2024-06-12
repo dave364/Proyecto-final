@@ -1,5 +1,5 @@
 $fondo: url('../img/fondo_1.jpg');
-$fondo-menu: linear-gradient(rgb(118 110 110 / 55%), rgb(45 38 38));
+$fondo-menu: linear-gradient(rgb(118 110 110 / 55%),rgba(0, 0, 0, 0));
 
 
 $primary:   #FFF !default;
@@ -20,3 +20,8 @@ $border-radius: 20px;
 $card-max-width: 623px;
 $card-max-height: 620px;
 $card-font-size: 20px;
+$primary-color: #000;
+$secondary-color: #fff;
+$navbar-bg-color: rgba(118, 110, 110, 1); /* Color inicial */
+$navbar-bg-color-light: rgba(118, 110, 110, 0.5); /* Color intermedio */
+$navbar-bg-color-transparent: rgba(118, 110, 110, 0); /* Color final transparente */

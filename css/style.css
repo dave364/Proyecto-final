@@ -1,4 +1,6 @@
-@charset "UTF-8";
+/* Color inicial */
+/* Color intermedio */
+/* Color final transparente */
 .borde, .nosotros article img, .titulo iframe {
   border: solid black;
   border-radius: 20px;
@@ -38,11 +40,48 @@ a {
   text-decoration: none;
 }
 
-header {
+header.border {
+  border: 1px solid #000;
   border-radius: 17px;
+  padding: 10px;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  color: #000;
+  text-decoration: none;
+}
+
+.navbar-toggler {
+  border: none;
+  background-color: transparent;
+}
+
+.navbar-nav {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.navbar-nav .nav-item {
+  margin-right: 15px;
+}
+.navbar-nav .nav-item .nav-link {
+  color: #000;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+.navbar-nav .nav-item .nav-link:hover {
+  color: #1a1a1a;
+}
+
+header {
   font-size: 30px;
   font-family: sans-serif;
-  background-image: linear-gradient(rgba(118, 110, 110, 0.55), rgb(45, 38, 38));
+  background-image: linear-gradient(rgba(118, 110, 110, 0.55), rgba(0, 0, 0, 0));
 }
 
 nav img {
@@ -58,19 +97,6 @@ nav img {
 .content-flex span {
   width: 120px;
   text-align: center;
-}
-
-nav {
-  height: 80px;
-  padding: 0;
-  display: flex;
-  justify-content: space-between;
-  z-index: 9999;
-}
-
-nav.index {
-  border: solid #000000;
-  border-radius: 20px;
 }
 
 nav a:hover {
@@ -124,7 +150,7 @@ h5 {
 }
 
 .card-body {
-  background-image: linear-gradient(rgba(118, 110, 110, 0.55), rgb(45, 38, 38));
+  background-image: linear-gradient(rgba(118, 110, 110, 0.55), rgba(0, 0, 0, 0));
   border-radius: 1px 1px 16px 16px;
 }
 
@@ -185,7 +211,7 @@ footer img:hover {
 }
 
 .nosotros-main {
-  min-height: 800px; /* Asegúrate de que esta altura sea necesaria */
+  min-height: 800px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -196,21 +222,21 @@ footer img:hover {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  max-width: 1200px; /* Ajusta según sea necesario */
+  max-width: 1200px;
 }
 
 .nosotros article {
   width: 50%;
-  padding: 20px; /* Añade un poco de espacio alrededor del contenido */
-  box-sizing: border-box; /* Asegúrate de que el padding se incluya en el ancho */
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .nosotros article h1 {
-  text-align: center; /* Centra el título */
+  text-align: center;
 }
 
 .nosotros article p {
-  font-size: 20px; /* Reduce el tamaño del texto para que sea más legible */
+  font-size: 20px;
   text-align: justify;
 }
 
@@ -246,7 +272,7 @@ h1.productos {
 }
 
 .card-body {
-  background-image: linear-gradient(rgba(118, 110, 110, 0.55), rgb(45, 38, 38));
+  background-image: linear-gradient(rgba(118, 110, 110, 0.55), rgba(0, 0, 0, 0));
   border-radius: 1px 1px 16px 16px;
 }
 
@@ -402,7 +428,45 @@ main.contacto-main {
 /*RESPONSIVE.DESING*/
 /*.TABLET.*/
 /* index */
+@media (max-width: 1023px) {
+  .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .navbar-nav .nav-item {
+    margin: 10px 0;
+  }
+  .navbar-nav .nav-item .nav-link {
+    font-size: 1.2rem;
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (max-width: 600px) {
+  .navbar-brand {
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .navbar-toggler {
+    margin: 0 auto 10px;
+  }
+  .navbar-nav .nav-item .nav-link {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    width: 100%;
+    text-align: center;
+  }
+}
 @media (min-width: 600px) and (max-width: 1023px) {
+  body {
+    background: url("../img/fondo_1.jpg");
+    background-size: cover;
+    background-repeat: repeat;
+    color: #FFF;
+  }
   div.container-fluid {
     border-radius: 17px;
     background-image: linear-gradient(rgb(118, 110, 110), rgb(45, 38, 38));
@@ -457,10 +521,6 @@ main.contacto-main {
     font-size: 40px;
     color: black;
   }
-  div.container-fluid {
-    border-radius: 17px;
-    background-image: linear-gradient(rgb(118, 110, 110), rgb(45, 38, 38));
-  }
   main section div.card {
     width: 20rem;
   }
@@ -482,6 +542,7 @@ main.contacto-main {
   section.inicio {
     grid-template-columns: 1fr;
     padding: 27px;
+    gap: 20px;
   }
   section.inicio img {
     max-width: 100%;
