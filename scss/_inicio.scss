@@ -4,8 +4,10 @@
   background-size: cover; /* Ajusta el tamaño para cubrir completamente el contenedor */
   background-position: center; /* Centra la imagen en el contenedor */
   height: 500px; /* Ajusta la altura según sea necesario */
-
+  transition: background-position 0.3s ease-out;
+  background-attachment: fixed;
 }
+
   
   body {
     margin: 0;
