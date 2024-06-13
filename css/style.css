@@ -1,34 +1,26 @@
+@charset "UTF-8";
 /* Color inicial */
 /* Color intermedio */
 /* Color final transparente */
-.borde, .nosotros article img, .titulo iframe {
+.borde, .nosotros article img {
   border: solid black;
   border-radius: 20px;
 }
 
+.header-titulo-container {
+  background: url("../img/2000_5ccaaea221073.jpg");
+  background-size: cover; /* Ajusta el tamaño para cubrir completamente el contenedor */
+  background-position: center; /* Centra la imagen en el contenedor */
+  height: 500px; /* Ajusta la altura según sea necesario */
+}
+
 body {
-  background: url("../img/fondo_1.jpg");
-  background-size: cover;
-  background-repeat: repeat;
-  color: #FFF;
+  margin: 0;
+  padding: 0;
 }
 
 main {
   margin: 10px 0;
-}
-
-.titulo article {
-  text-align: center;
-  height: 500px;
-  margin: auto;
-  width: min-content;
-  padding: 50px;
-}
-
-.titulo iframe {
-  width: 95%;
-  height: 500px;
-  display: inline;
 }
 
 a {
@@ -65,7 +57,7 @@ header.border {
   margin-right: 15px;
 }
 .navbar-nav .nav-item .nav-link {
-  color: #000;
+  color: #FFF;
   text-decoration: none;
   padding: 5px 10px;
 }
@@ -98,7 +90,7 @@ nav a:hover {
   -webkit-text-stroke: 1px #FFF;
 }
 nav a:hover a.nav-link {
-  color: rgb(0, 0, 0) !important;
+  color: rgb(0, 0, 0);
 }
 
 p {
@@ -107,23 +99,36 @@ p {
 
 h1 {
   font-size: 90px;
-  color: #000000;
+  color: #FFF;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Sombra del texto */
   /*-webkit-text-stroke: 1px $primary;*/
 }
 
 h3 {
-  color: #000000;
-  /*-webkit-text-stroke: 1px $primary;*/
+  color: #fff;
 }
 
 h2 {
-  color: #000000;
+  color: #FFF;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  font-size: 2rem;
+}
+
+.titulo {
+  display: flex; /* Cambiado de grid a flex para facilitar el centrado */
+  justify-content: center; /* Centra horizontalmente los elementos */
+  align-items: center; /* Centra verticalmente los elementos */
+  height: 300px; /* Ajusta la altura según sea necesario */
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 50px 0;
+  color: #fff;
+  text-align: center;
 }
 
 .texto-animado {
-  animation-name: texto;
-  animation-duration: 3s;
-  animation-iteration-count: 1;
+  animation: texto 2s ease-out 1;
+  padding: 20px;
 }
 
 @keyframes texto {
@@ -134,9 +139,15 @@ h2 {
     transform: translateY(0);
   }
 }
-.titulo {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+.texto-borde {
+  text-shadow: 2px 2px 8px rgb(0, 0, 0);
+}
+
+.titulo article {
+  text-align: center;
+  padding: 0 20px; /* Ajusta el espacio interno */
+  max-width: 800px; /* Limita el ancho del contenido si es necesario */
+  margin: auto; /* Centra el contenido horizontalmente */
 }
 
 .card-body {
@@ -418,6 +429,23 @@ main.contacto-main {
 /*RESPONSIVE.DESING*/
 /*.TABLET.*/
 /* index */
+@media (max-width: 1024px) {
+  .titulo {
+    grid-template-columns: 1fr;
+  }
+  .texto-borde {
+    font-size: 2rem;
+  }
+  iframe {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 600px) {
+  .texto-borde {
+    text-shadow: 2px 2px 8px rgb(0, 0, 0);
+  }
+}
 @media (max-width: 1023px) {
   .navbar-nav {
     flex-direction: column;
@@ -442,6 +470,13 @@ main.contacto-main {
   }
   .navbar-toggler {
     margin: 0 auto 10px;
+    border: solid black;
+  }
+  .navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="rgba%28255, 255, 255, 1%29" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
+  }
+  .navbar-toggler:not(.collapsed) .navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="rgba%280, 0, 0, 1%29" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
   }
   .navbar-nav .nav-item .nav-link {
     padding: 10px 20px;
@@ -452,7 +487,7 @@ main.contacto-main {
 }
 @media (min-width: 600px) and (max-width: 1023px) {
   body {
-    background: url("../img/fondo_1.jpg");
+    background: url("../img/2000_5ccaaea221073.jpg");
     background-size: cover;
     background-repeat: repeat;
     color: #FFF;
@@ -509,7 +544,10 @@ main.contacto-main {
   }
   h1 {
     font-size: 40px;
-    color: black;
+    color: #FFF;
+  }
+  .texto-borde {
+    text-shadow: 2px 2px 8px rgb(0, 0, 0);
   }
   main section div.card {
     width: 20rem;

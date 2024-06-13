@@ -1,30 +1,25 @@
 
+.header-titulo-container {
+  background: $fondo ; 
+  background-size: cover; /* Ajusta el tamaño para cubrir completamente el contenedor */
+  background-position: center; /* Centra la imagen en el contenedor */
+  height: 500px; /* Ajusta la altura según sea necesario */
+
+}
   
   body {
-    background: $fondo;
-      background-size: cover; 
-    background-repeat: repeat;
-    color: $primary;
+    margin: 0;
+    padding: 0;
+    
   }
   
   main {
     margin: 10px 0;
   }
   
-  .titulo article {
-    text-align: center;
-    height: 500px;
-    margin: auto;
-    width: min-content;
-    padding: 50px;
-  }
+
   
-  .titulo iframe {
-    width: 95%;
-    height: 500px;
-    display: inline;
-    @extend .borde;
-  }
+
   
   a {
     text-decoration: none;
@@ -61,7 +56,7 @@
         margin-right: 15px;
 
         .nav-link {
-            color: $primary-color;
+            color: $primary;
             text-decoration: none;
             padding: 5px 10px;
             &:hover {
@@ -96,7 +91,7 @@ header {
   nav a:hover {
     -webkit-text-stroke: 1px $primary;
      a.nav-link {
-      color: rgb(0 0 0) !important;
+      color: rgb(0 0 0) ;
     }
     
   }
@@ -107,26 +102,37 @@ header {
   
   h1 {
     font-size: 90px;
-    color: $secondary;
+    color: $primary;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Sombra del texto */
     /*-webkit-text-stroke: 1px $primary;*/
   }
   
   h3 {
-    color: $secondary;
+    color: $secondary-color
     /*-webkit-text-stroke: 1px $primary;*/
   }
   
   h2 {
-    color: $secondary;
-    
+    color: $primary;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    font-size: 2rem;
   }
 
- 
+  .titulo {
+    display: flex; /* Cambiado de grid a flex para facilitar el centrado */
+    justify-content: center; /* Centra horizontalmente los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+    height: 300px; /* Ajusta la altura según sea necesario */
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 50px 0;
+    color: #fff;
+    text-align: center;
+  }
   
   .texto-animado {
-    animation-name: texto;
-    animation-duration: 3s;
-    animation-iteration-count: 1;
+    animation: texto 2s ease-out 1;
+    padding: 20px;
   }
   
   @keyframes texto {
@@ -137,11 +143,19 @@ header {
       transform: translateY(0);
     }
   }
-
-  .titulo {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  
+  .texto-borde {
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 1.7);
+    
   }
+  
+  .titulo article {
+    text-align: center;
+    padding: 0 20px; /* Ajusta el espacio interno */
+    max-width: 800px; /* Limita el ancho del contenido si es necesario */
+    margin: auto; /* Centra el contenido horizontalmente */
+  }
+
 
   .card-body { 
   background-image: $fondo-menu;

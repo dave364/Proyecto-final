@@ -1,11 +1,11 @@
-$fondo: url('../img/fondo_1.jpg');
+$fondo: url('../img/2000_5ccaaea221073.jpg');
 $fondo-menu: linear-gradient(rgb(118 110 110 / 55%),rgba(0, 0, 0, 0));
 
 
-$primary:   #FFF !default;
-$secondary: #000000 !default;
+$primary:   #FFF; 
+$secondary: #000000 ;
 
-$theme-color: () !default;
+$theme-color: () ;
 
 $theme-color: map-merge(
 ( 
