@@ -1,15 +1,16 @@
 
 .header-titulo-container {
-  background: $fondo ; 
-  background-size: cover; /* Ajusta el tamaño para cubrir completamente el contenedor */
-  background-position: center; /* Centra la imagen en el contenedor */
-  height: 500px; /* Ajusta la altura según sea necesario */
-  transition: background-position 0.3s ease-out;
-  background-attachment: fixed;
+  height: 600px; /* Ajusta la altura según sea necesario */
 }
 
   
   body {
+    background: $fondo ; 
+    background-size: cover; /* Ajusta el tamaño para cubrir completamente el contenedor */
+    background-position: center; /* Centra la imagen en el contenedor */
+  
+    transition: background-position 0.3s ease-out;
+    background-attachment: fixed;
     margin: 0;
     padding: 0;
     
@@ -70,8 +71,8 @@
 
 
 header {
-  font-size: 30px;
-  font-family: sans-serif;
+  font-size: 14px;
+  font-family: 'Caladea', Arial, sans-serif;
   background-image: $fondo-menu;
 }
   
@@ -175,15 +176,17 @@ header {
     flex-wrap: wrap;
     justify-content: center; 
     padding: 20px 0; 
-    
+    background-color: #1b262c;
   }
   
   footer h3 {
     width: 100%; 
+    
   }
   
   footer div {
     margin-top: 10px; 
+   
   }
   
   footer a {

@@ -8,15 +8,15 @@
 }
 
 .header-titulo-container {
-  background: url("../img/2000_5ccaaea221073.jpg");
-  background-size: cover; /* Ajusta el tamaño para cubrir completamente el contenedor */
-  background-position: center; /* Centra la imagen en el contenedor */
-  height: 500px; /* Ajusta la altura según sea necesario */
-  transition: background-position 0.3s ease-out;
-  background-attachment: fixed;
+  height: 600px; /* Ajusta la altura según sea necesario */
 }
 
 body {
+  background: url("../img/2000_5ccaaea221073.jpg");
+  background-size: cover; /* Ajusta el tamaño para cubrir completamente el contenedor */
+  background-position: center; /* Centra la imagen en el contenedor */
+  transition: background-position 0.3s ease-out;
+  background-attachment: fixed;
   margin: 0;
   padding: 0;
 }
@@ -68,8 +68,8 @@ header.border {
 }
 
 header {
-  font-size: 30px;
-  font-family: sans-serif;
+  font-size: 14px;
+  font-family: "Caladea", Arial, sans-serif;
   background-image: linear-gradient(rgba(118, 110, 110, 0.55), rgba(0, 0, 0, 0));
 }
 
@@ -188,6 +188,7 @@ footer {
   flex-wrap: wrap;
   justify-content: center;
   padding: 20px 0;
+  background-color: #1b262c;
 }
 
 footer h3 {
