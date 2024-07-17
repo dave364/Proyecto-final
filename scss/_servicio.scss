@@ -1,41 +1,76 @@
+/* Fondo de la sección servicios */
+#servicios {
+  background-color: #1b262c;
+  color: #fff; /* Asegura que el texto sea legible sobre el fondo oscuro */
+  padding: 20px; /* Ajusta el padding según sea necesario */
+}
+
+#servicios h1, #servicios h2, #servicios p, #servicios ul, #servicios li {
+  color: #fff; /* Asegura que todos los textos dentro de la sección sean blancos */
+}
+
 .servicios_card {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
-  }
-  
-  .main-servicios h1 {
-    text-align: center;
-  }
-  
-  .main-servicios {
-    min-height: auto;
-  }
-  
-  .servicios {
-    width: 50%;
-    font-size: 30px;
-  }
-  
-  .servicios article {
-    border: solid;
-    border-radius: 25px;
-  }
-  
-  .lista {
-    font-size: 23px;
-    display: grid;
-    justify-content: center;
-    margin: auto;
-    padding: 30px;
-    border-radius: 20px;
-    border: solid black;
-  }
-  
-  .card-header {
-    font-size: 40px;
-  }
-  
-  .card-body {
-    font-size: 20px;
-  }
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  gap: 20px; /* Añade espacio entre las columnas */
+  padding: 20px;
+}
+
+.div-servicios h1 {
+  text-align: center;
+}
+
+h1 .divider {
+  width: 6%;
+}
+
+.div-servicios {
+  min-height: auto;
+}
+
+.servicios {
+  width: 50%;
+  font-size: 30px;
+  background-color: #fff; /* Fondo blanco para el contenido de servicios */
+  color: #000; /* Color del texto */
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.servicios article {
+  border: 1px solid #000;
+  border-radius: 25px;
+  padding: 20px; /* Añadir padding para un mejor diseño */
+  background-color: #fff; /* Fondo blanco para los artículos */
+  color: #000; /* Color del texto */
+}
+
+.lista {
+  font-size: 23px;
+  display: grid;
+  justify-content: center;
+  margin: auto;
+  padding: 30px;
+  border-radius: 20px;
+  border: solid black;
+  background-color: #241f1f; /* Fondo blanco para la lista */
+  color: #000; /* Color del texto */
+}
+
+.card-header {
+  font-size: 40px;
+}
+
+.card-body {
+  font-size: 20px;
+}
+
+/* Transiciones para el fondo y el texto */
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar .nav-link.active {
+  color: #fff; /* Color del enlace activo */
+}

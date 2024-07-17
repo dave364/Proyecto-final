@@ -1,8 +1,8 @@
 $fondo: url('../img/2000_5ccaaea221073.jpg');
-$fondo-menu: linear-gradient(rgb(118 110 110 / 55%),rgba(0, 0, 0, 0));
 
 
-$primary:   #FFF; 
+
+$primary:   #eedde2;; 
 $secondary: #000000 ;
 
 $theme-color: () ;
@@ -13,15 +13,17 @@ $theme-color: map-merge(
     "secondary": $secondary,
 ) ,
 $theme-color
-);     
+);    
 
-$border-color: black;
-$border-radius: 20px;
-$card-max-width: 623px;
-$card-max-height: 620px;
-$card-font-size: 20px;
+$border-color: #ccc;
+$border-radius: 8px;
+$card-max-height: 300px;
+$card-max-width: 100%;
+$card-font-size: 16px;
+
+
 $primary-color: #000;
-$secondary-color: #fff;
+$secondary-color: #fdfdfd;
 $navbar-bg-color: rgba(118, 110, 110, 1); /* Color inicial */
 $navbar-bg-color-light: rgba(118, 110, 110, 0.5); /* Color intermedio */
 $navbar-bg-color-transparent: rgba(118, 110, 110, 0); /* Color final transparente */

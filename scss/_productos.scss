@@ -22,7 +22,6 @@
     text-align: center;
   }
   .card-body { 
-    background-image: $fondo-menu;
+   
       border-radius: 1px 1px 16px 16px;
      }
-  @include cuadro-inicio();

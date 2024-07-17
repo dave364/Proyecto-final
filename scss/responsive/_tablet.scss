@@ -1,0 +1,59 @@
+/* _inicio.scss */
+
+@media (min-width: 601px) and (max-width: 1023px) {
+    body {
+        background: $fondo;
+        background-size: cover; 
+        background-repeat: repeat;
+        color: $secondary-color;
+    }
+
+    div.container-fluid {
+        border-radius: 17px;
+        background-image: linear-gradient(rgb(118, 110, 110), rgb(45, 38, 38));
+    }
+
+    section.inicio .card-img-top {
+        max-height: 234px;
+    }
+
+    section.inicio {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    section.nosotros article img {
+        width: 380px;
+    }
+
+    section.nosotros article p {
+        font-size: 13px;
+        padding: 10px;
+    }
+
+    main.nosotros-main {
+        margin: 55px 0;
+        min-height: 470px;
+    }
+
+    section.titulo iframe {
+        height: 270px;
+    }
+
+    section.titulo article {
+        height: 270px;
+    }
+
+    main.contacto-main {
+        min-height: 1101px;
+    }
+
+    section.productos {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        padding: 5px;
+    }
+
+    section.productos article {
+        width: auto;
+    }
+}
