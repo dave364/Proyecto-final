@@ -5,6 +5,7 @@ body {
   box-sizing: border-box;
   background-color: #1b262c;
   color: #ffffff;
+  height: 100%;
 }
 
 .about-section {
@@ -36,6 +37,8 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  gap: 5rem;
+
 }
 
 .text {
@@ -60,5 +63,5 @@ body {
 .image-container img {
   max-width: 100%;
   height: auto;
-  border-radius: 10px;
+  border-radius: 5px;
 }

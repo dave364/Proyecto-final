@@ -5,6 +5,7 @@
 }
  
 @include cuadro-inicio();
+@include cuadro-iniciodos();
 
 body {
   font-family: 'Caladea', Arial, sans-serif;
@@ -15,6 +16,7 @@ body {
   background-attachment: fixed;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   position: relative; 
   z-index: 0; 
   
@@ -52,7 +54,7 @@ a {
   font-size: 0.5rem;
   color: $secondary-color;
   text-decoration: none;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Caladea', Arial, sans-serif;
   margin-left: 15px;
 }
 
