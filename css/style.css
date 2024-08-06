@@ -7,45 +7,6 @@
   border-radius: 20px;
 }
 
-.header-titulo-container {
-  height: 600px; /* Ajusta la altura según sea necesario */
-}
-
-.inicio {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 300px;
-  padding: 150px;
-}
-.inicio .card {
-  width: 99%;
-  border: solid #ccc;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-.inicio .card-img-top {
-  width: 100%;
-  height: auto;
-  max-height: 300px;
-  max-width: 100%;
-  margin: auto;
-  border-radius: 8px 8px 0 0;
-}
-.inicio .card-body {
-  font-size: 16px;
-  padding: 15px;
-  background-color: #fff;
-  text-align: center;
-}
-.inicio .card h5 {
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-.inicio .card p {
-  margin-bottom: 0;
-  color: #666;
-}
-
 :root {
   --background: #1b262c;
   --text: #F8F8FF;
@@ -195,7 +156,6 @@ a {
   list-style: none;
   padding-left: 0;
   display: flex;
-  flex-direction: row;
   align-items: center;
 }
 .navbar-nav .nav-item {
@@ -244,13 +204,6 @@ p {
 .titulo h1,
 .titulo h2 {
   font-family: "Caladea", Arial, sans-serif;
-}
-
-h1 {
-  font-size: 40px;
-  color: #fdfdfd;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Sombra del texto */
-  -webkit-text-stroke: 1px #fdfdfd;
 }
 
 h3 {
@@ -308,7 +261,9 @@ header .divider {
   }
 }
 .texto-borde {
-  text-shadow: 2px 2px 8px rgb(0, 0, 0);
+  text-shadow: 0.03em 0.03em 3px rgb(0, 0, 0);
+  font-size: 50px;
+  color: #fdfdfd;
 }
 
 .titulo article {
