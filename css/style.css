@@ -311,6 +311,11 @@ footer img:hover {
   transform: scale(1.1);
 }
 
+.subtexto-borde {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  font-size: 1rem;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -374,6 +379,7 @@ body {
   max-width: 100%;
   height: auto;
   border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* h1.productos {
