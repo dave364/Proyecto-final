@@ -207,14 +207,13 @@ p {
 }
 
 h3 {
-  color: #fdfdfd;
+  color: black;
   -webkit-text-stroke: 1px #fdfdfd;
 }
 
 h2 {
   color: #fdfdfd;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-  font-size: 1rem;
+  font-size: 36px;
 }
 
 .titulo {
@@ -334,14 +333,14 @@ body {
 
 .section-title {
   font-size: 36px;
-  font-weight: bold;
   color: #1b262c;
   text-align: left;
   margin-bottom: 20px;
 }
 
-h2 .divider {
+.text h2 .divider {
   margin-left: 0px;
+  width: 20%;
 }
 
 .content {
@@ -405,81 +404,88 @@ h1.productos {
   border-radius: 1px 1px 16px 16px;
 }
 
-/* Fondo de la sección servicios */
 #servicios {
-  background-color: #1b262c;
-  color: #fff; /* Asegura que el texto sea legible sobre el fondo oscuro */
-  padding: 20px; /* Ajusta el padding según sea necesario */
+  background-color: #f5f5f5; /* Fondo blanco */
+  color: #333333; /* Color del texto principal para buen contraste */
+  padding: 40px;
 }
 
-#servicios h1, #servicios h2, #servicios p, #servicios ul, #servicios li {
-  color: #fff; /* Asegura que todos los textos dentro de la sección sean blancos */
+#servicios h2, #servicios h2, #servicios p, #servicios ul, #servicios li {
+  color: #333333; /* Asegura un buen contraste con el fondo blanco */
 }
 
 .servicios_card {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  justify-items: center;
-  gap: 20px; /* Añade espacio entre las columnas */
+  gap: 30px;
   padding: 20px;
 }
 
-.div-servicios h1 {
+.div-servicios h2 {
   text-align: center;
+  color: #1b262c; /* Color más oscuro para el encabezado */
 }
 
-h1 .divider {
+h2 .divider {
   width: 6%;
 }
 
 .div-servicios {
-  min-height: auto;
+  padding: 30px;
 }
 
 .servicios {
-  width: 50%;
-  font-size: 30px;
-  background-color: #fff; /* Fondo blanco para el contenido de servicios */
-  color: #000; /* Color del texto */
-  padding: 20px;
-  border-radius: 20px;
+  background-color: #ffffff;
+  color: #333;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .servicios article {
-  border: 1px solid #000;
-  border-radius: 25px;
-  padding: 20px; /* Añadir padding para un mejor diseño */
-  background-color: #fff; /* Fondo blanco para los artículos */
-  color: #000; /* Color del texto */
+  background-color: #f9f9f9;
+  color: #444;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-left: 5px solid #f39c12;
 }
 
 .lista {
-  font-size: 23px;
-  display: grid;
-  justify-content: center;
+  font-size: 18px;
   margin: auto;
-  padding: 30px;
-  border-radius: 20px;
-  border: solid black;
-  background-color: #241f1f; /* Fondo blanco para la lista */
-  color: #000; /* Color del texto */
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  color: #333333;
+  border: 1px solid #dddddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .card-header {
-  font-size: 40px;
+  font-size: 24px;
+  color: #ffffff;
+  background-color: #814256; /* Color destacado para el encabezado */
+  padding: 10px;
+  border-radius: 5px 5px 0 0;
 }
 
 .card-body {
-  font-size: 20px;
+  font-size: 16px;
+  color: #333;
 }
 
-/* Transiciones para el fondo y el texto */
+.card {
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+  background-color: #ffffff; /* Fondo blanco */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Transiciones para mejorar la apariencia */
 html {
   scroll-behavior: smooth;
-}
-
-.navbar .nav-link.active {
-  color: #fff; /* Color del enlace activo */
 }
 
 .contacto {

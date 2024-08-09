@@ -126,14 +126,13 @@ p {
 
 
 h3 {
-  color: $secondary-color;
+  color: black;
   -webkit-text-stroke: 1px $secondary-color;
 }
 
 h2 {
   color: $secondary-color;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-  font-size: 1rem;
+  font-size: 36px;
 }
 
 .titulo {
