@@ -33,10 +33,11 @@ body {
 .articles {
   display: flex;
   flex-wrap: wrap;
-  margin: 50px auto;
+  margin: auto;
   justify-content: center;
   max-width: 1200px;
-  gap: 7rem;
+  gap: 5rem;
+  padding: 2rem;
 }
 
 .articles article {
@@ -202,7 +203,7 @@ p {
 }
 
 .titulo h1,
-.titulo h2 {
+.titulo h2 .titulo h3 {
   font-family: "Caladea", Arial, sans-serif;
 }
 
@@ -213,7 +214,7 @@ h3 {
 
 h2 {
   color: #fdfdfd;
-  font-size: 36px;
+  font-size: 30px;
 }
 
 .titulo {
@@ -337,7 +338,7 @@ body {
 }
 
 .section-title {
-  font-size: 36px;
+  font-size: 30px;
   color: #1b262c;
   text-align: left;
   margin-bottom: 20px;
@@ -366,7 +367,7 @@ body {
 .text p {
   margin-bottom: 15px;
   line-height: 1.6;
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .image-container {
@@ -380,6 +381,13 @@ body {
   height: auto;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2.definiciones {
+  text-align: center;
+  margin: 1rem;
+  padding: 3rem;
+  height: 1rem;
 }
 
 /* h1.productos {
@@ -402,12 +410,11 @@ body {
  .main-productos {
    text-align: center;
  }*/
-h1.productos {
+h2.productos {
   text-align: center;
-}
-
-.card-body {
-  border-radius: 1px 1px 16px 16px;
+  margin: 1rem;
+  padding: 3rem;
+  height: 1rem;
 }
 
 #servicios {

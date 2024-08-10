@@ -92,10 +92,11 @@
   .articles {
       display: flex;
       flex-wrap: wrap;
-      margin: 50px auto;
+      margin: auto;
       justify-content: center;
       max-width: 1200px;
-      gap: 7rem;
+      gap: 5rem;
+      padding: 2rem;
   }
   
   .articles article {

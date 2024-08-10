@@ -118,7 +118,8 @@ p {
 }
 
 .titulo h1,
-.titulo h2 {
+.titulo h2
+.titulo h3 {
   font-family: 'Caladea', Arial, sans-serif;
 } 
 
@@ -132,7 +133,7 @@ h3 {
 
 h2 {
   color: $secondary-color;
-  font-size: 36px;
+  font-size: 30px;
 }
 
 .titulo {
