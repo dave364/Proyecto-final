@@ -49,7 +49,7 @@ body {
   transition: all 0.4s ease-in-out;
   overflow: hidden;
   border-radius: 5px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(129, 66, 86, 0.5) 0px 7px 29px 0px;
 }
 
 .articles article h2 {
@@ -81,7 +81,7 @@ body {
 .article-preview {
   padding: 1.5rem;
   background: #1b262c;
-  height: 21.5rem;
+  height: auto;
 }
 
 .articles figure {
@@ -380,7 +380,7 @@ body {
   max-width: 100%;
   height: auto;
   border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: rgba(129, 66, 86, 0.5) 0px 7px 29px 0px;
 }
 
 h2.definiciones {
@@ -415,6 +415,31 @@ h2.productos {
   margin: 1rem;
   padding: 3rem;
   height: 1rem;
+}
+
+.carousel-control-prev {
+  left: 30rem;
+}
+
+.carousel-control-next {
+  right: 30rem;
+}
+
+.carousel-indicators {
+  position: relative;
+}
+
+.carousel-indicators [data-bs-target] {
+  bottom: 20px;
+  height: 6px;
+  left: -3px;
+  background-color: #814256;
+  margin-bottom: -1rem;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(52%) sepia(42%) saturate(393%) hue-rotate(289deg) brightness(92%) contrast(92%);
 }
 
 #servicios {

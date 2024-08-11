@@ -25,3 +25,28 @@
     height: 1rem;
   }
  
+  .carousel-control-prev {
+    left: 30rem;
+}
+
+.carousel-control-next {
+  right: 30rem;
+}
+
+.carousel-indicators {
+  position: relative;
+
+}
+
+.carousel-indicators [data-bs-target] {
+  bottom: 20px;
+  height: 6px;
+  left: -3px;
+  background-color: #814256;
+  margin-bottom: -1rem;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(52%) sepia(42%) saturate(393%) hue-rotate(289deg) brightness(92%) contrast(92%);
+}
