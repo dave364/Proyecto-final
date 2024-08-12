@@ -2,11 +2,36 @@
 
 @media (max-width: 600px) {
     /* Estilos para la barra de navegación móvil */
-    .navbar-brand {
-      justify-content: center;
-      text-align: center;
+
+    .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+      display: flex;
+      flex-wrap: inherit;
+      align-items: center;
+      justify-content: space-between;
+      
+  }
+
+  .navbar {
+    font-size: 16px;
+    background-color: transparent;
+    height: auto;
+    transition: height 0.35s, background-color 0.35s, font-size 0.35s;
+    padding: 0px;
+}
+
+    header {
+      font-size: 16px;
+      font-family: "Caladea", Arial, sans-serif;
+      position: sticky;
+      top: 0;
+      left: 0;
       width: 100%;
-      margin-bottom: 10px;
+      z-index: 1000;
+      transition: background-color 0.9s ease;
+  }
+
+    .navbar-brand {
+      width: 15rem;
     }
   
     .navbar-toggler {
@@ -32,13 +57,7 @@
         }
       }
     }
-  
-    /* Estilos para la sección de título */
-    section.titulo {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
+
   
     h1 {
       font-size: 40px;

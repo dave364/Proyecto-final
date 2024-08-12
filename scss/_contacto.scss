@@ -48,15 +48,6 @@
   cursor: pointer; 
 }
 
-.botons:hover {
-  background: darken($secondary, 10%);
-}
-
-.botons:focus {
-  outline: none;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
-}
-
 .contacto article {
   padding: 60px;
   text-align: center;
@@ -64,12 +55,7 @@
   margin-bottom: 20px; 
 }
 
-main.contacto-main {
-  min-height: 100vh;
-  display: flex; 
-  flex-direction: column; 
-  justify-content: center; 
-}
+
 
 @media (max-width: 768px) {
   .contacto {

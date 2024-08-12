@@ -26,11 +26,11 @@
   }
  
   .carousel-control-prev {
-    left: 30rem;
+    left: 10rem;
 }
 
 .carousel-control-next {
-  right: 30rem;
+  right: 10rem;
 }
 
 .carousel-indicators {
@@ -49,4 +49,23 @@
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
     filter: invert(52%) sepia(42%) saturate(393%) hue-rotate(289deg) brightness(92%) contrast(92%);
+}
+
+.articles .col-3 {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+@media (max-width: 768px) {
+  .articles .col-3 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  .articles .col-3 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
 }

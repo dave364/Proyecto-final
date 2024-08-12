@@ -7,19 +7,9 @@ $secondary: #000000 ;
 
 $theme-color: () ;
 
-$theme-color: map-merge(
-( 
-    "primary":   $primary,
-    "secondary": $secondary,
-) ,
-$theme-color
-);    
+  
 
-$border-color: #ccc;
-$border-radius: 8px;
-$card-max-height: 300px;
-$card-max-width: 100%;
-$card-font-size: 16px;
+
 
 
 $primary-color: #000;

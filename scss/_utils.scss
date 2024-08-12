@@ -1,70 +1,5 @@
 
 
-.borde {
-    border: solid black;
-    border-radius: 20px;
-}
-
-
-@mixin border-style {
-    border: solid $border-color;
-    border-radius: $border-radius;
-  }
-  
-  @mixin card-layout {
-    width: 99%;
-    @include border-style;
-  }
-  
-  @mixin card-img-style {
-    width: 100%;
-    height: auto;
-    max-height: $card-max-height;
-    max-width: $card-max-width;
-    margin: auto;
-    border-radius: $border-radius $border-radius 0 0;
-  }
- 
-  @mixin card-body-style {
-    font-size: $card-font-size;
-    padding: 15px; // Añadido para darle un poco de espacio interior
-  }
-  
-  // Cuadro de inicio
-  @mixin cuadro-inicio() {
-    .inicio {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 300px; // Añadido para espacio entre las tarjetas
-      padding: 150px;
-  
-      .card {
-        @include card-layout;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Añade una sombra para dar efecto de tarjeta elevada
-  
-        &-img-top {
-          @include card-img-style;
-        }
-  
-        &-body {
-          @include card-body-style;
-          background-color: #fff; // Fondo blanco para el cuerpo de la tarjeta
-          text-align: center;
-        }
-  
-        h5 {
-          font-weight: bold;
-          margin-bottom: 10px;
-        }
-  
-        p {
-          margin-bottom: 0;
-          color: #666; // Color del texto
-        }
-      }
-    }
-  }
-
   @mixin cuadro-iniciodos() {
     :root {
       --background: #1b262c;
@@ -140,7 +75,7 @@
   .article-preview {
       padding: 1.5rem;
       background: #1b262c;
-      height: auto;
+      height: 19rem;
   }
   
   .articles figure {
