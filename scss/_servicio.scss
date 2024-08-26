@@ -71,3 +71,21 @@ html {
   scroll-behavior: smooth;
 }
 
+@media (max-width: 768px) {
+  .servicios_card {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 13px;
+    padding: 14px;
+}
+
+.lista {
+  font-size: 15px;
+  margin: auto;
+  padding: 5px;
+  background-color: #ffffff;
+  color: #333333;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+}
+

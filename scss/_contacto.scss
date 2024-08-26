@@ -1,74 +1,197 @@
-.contacto {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
+/* Contenedor principal */
+#contacto {
+  background-color: #fdfdfd;
+  
 }
 
-.contacto iframe {
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
-}
-
-.form-register {
-  width: 400px;
-  padding: 30px;
-  margin: auto;
-  margin-top: 50px;
-  font-family: Arial, Helvetica, sans-serif;
-  box-sizing: border-box;
-  border: 1px solid $secondary;
-  border-radius: 20px; 
-}
-
-
-.form-register h2 {
-  font-size: 22px;
-  margin-bottom: 20px;
+/* Título principal */
+#contacto h2 {
+  color: #333;
   text-align: center;
-  color: $secondary;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  padding: 3rem;
+}
+
+/* Contenedor de contacto */
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+  padding: 0 15rem;
+  gap: 2rem;
+}
+
+/* Información de contacto */
+.contact-info {
+  flex: 1;
+  padding-right: 2rem;
+}
+
+.contact-info h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.contact-info p {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #666;
+}
+
+.contact-info i {
+  color: #814256;
+  margin-right: 0.5rem;
+}
+
+.social-media svg {
+  box-shadow: rgba(129, 66, 86, 0.5) 0px 7px 29px 0px;
+  width: 50px;
+  border-radius: 50%;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.social-media a svg:hover {
+  transform: scale(1.1);
+  box-shadow: rgba(129, 66, 86, 0.7) 0px 10px 35px 0px;
+}
+
+.social-media {
+  margin-top: 2rem;
+  position: relative;
+  left: 7rem;
+}
+
+/* Formulario de contacto */
+.contact-form {
+  flex: 1;
+  margin-top: -3rem;
+  padding: 2rem;
+  border-radius: 8px;
+  
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  display: flex;
+  gap: 1rem;
+ 
 }
 
 .controls {
   width: 100%;
-  color: $secondary-color;
-  background: $secondary;
-  padding: 10px;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
   border-radius: 4px;
-  margin-bottom: 16px;
-  border: 1px solid grey;
+  font-size: 1rem;
 }
 
 .botons {
-  width: 49%;
-  padding: 4px;
-  margin: 1px 0;
-  color: $secondary-color;
-  background: $secondary;
-  border: none; 
+  padding: 0.75rem;
+  background-color: #814256;
+  color: #fff;
+  border: none;
   border-radius: 4px;
-  cursor: pointer; 
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: background-color 0.3s;
 }
 
-.contacto article {
-  padding: 60px;
-  text-align: center;
-  height: fit-content;
-  margin-bottom: 20px; 
+.botons:hover {
+  background-color: #682d3a;
 }
 
-
-
-@media (max-width: 768px) {
-  .contacto {
-    grid-template-columns: 1fr;
+/* Estilos responsive */
+@media (max-width: 1024px) {
+  .contact-container {
+    padding: 0 5rem;
+    gap: 1rem;
   }
 
-  .form-register {
-    width: 100%; 
-    margin-top: 20px; 
-    border-radius: 0; 
+  .contact-info h1 {
+    font-size: 1.75rem;
+  }
+
+  .contact-info p {
+    font-size: 0.95rem;
+  }
+
+  .contact-form {
+    padding: 1.5rem;
+  }
+
+  .controls {
+    font-size: 0.95rem;
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    padding: 0 2rem;
+  }
+
+  .contact-info, .contact-form {
+    margin-bottom: 0rem;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .contact-info h1 {
+    font-size: 1.5rem;
+  }
+
+  .contact-info p {
+    font-size: 0.9rem;
+  }
+
+  .controls {
+    font-size: 0.9rem;
+  }
+  .social-media {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 3rem;
+    position: relative;
+    left: 2px;
+}
+.contact-info i {
+  color: #814256;
+  margin-right: -0.5rem;
+}
+.contact-container {
+  padding: 0 2rem;
+}
+}
+
+@media (max-width: 480px) {
+  .contact-container {
+    padding: 0 2rem;
+  }
+
+  .contact-info h1 {
+    font-size: 1.25rem;
+  }
+
+  .contact-info p {
+    font-size: 0.85rem;
+  }
+
+  .controls {
+    font-size: 0.85rem;
   }
 
   .botons {
-    width: 100%; 
+    padding: 0.5rem;
+    font-size: 0.9rem;
   }
 }
