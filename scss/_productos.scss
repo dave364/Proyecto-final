@@ -36,13 +36,14 @@ h2.productos {
   max-width: 25%;
 }
 
+
 /* Mostrar carrusel de escritorio en pantallas grandes */
 @media (min-width: 992px) {
   #aprendemos {
     display: block;
   }
 
-  #aprendemosdos {
+  #temas{
     display: none;
   }
 }
@@ -53,8 +54,28 @@ h2.productos {
     display: none;
   }
 
-  #aprendemosdos {
+  #temas{
     display: block;
+  }
+}
+
+@media (min-width: 992px) {
+  #aprendemos{
+    visibility: visible;
+    padding: 50px 0;
+    
+  }
+  #temas {
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 991.98px) {
+  #aprendemos{
+    visibility: hidden;
+  }
+  #temas{
+    visibility: visible;
   }
 }
 

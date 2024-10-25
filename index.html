@@ -38,7 +38,7 @@
                   <a class="nav-link" href="#aprendemos">TEMAS</a>
               </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#contacto">CONTÂCTENOS</a>
+                    <a class="nav-link" href="#contacto">CONTACTENOS</a>
                 </li> 
                 </ul>
             </div>
@@ -163,7 +163,7 @@
   <div>
     <h2 class="productos">TEMAS</h2>
   </div>
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+    <div id="carouselDesktop" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -277,11 +277,11 @@
     </div>
   </section>
 
-  <section id="aprendemosdos">
+  <section id="temas">
     <div>
       <h2 class="productos">TEMAS</h2>
     </div>
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div id="carouselMobile" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -401,7 +401,7 @@
 
   <section id="contacto">
     <div>
-      <h2 class="contacto">CONTÁCTENOS<hr class="divider"></h2>
+      <h2 class="contacto">CONTACTENOS<hr class="divider"></h2>
       
     </div>
     <div class="contact-container">
@@ -456,40 +456,43 @@
 </footer>
 <script>
 document.addEventListener("DOMContentLoaded", function() {
-    var navbarLinks = document.querySelectorAll('.navbar-nav .nav-link');
-    var sections = document.querySelectorAll('main section');
+    const navbarLinks = document.querySelectorAll('.navbar-nav .nav-link');
+    const sections = document.querySelectorAll('main section');
 
-    window.addEventListener('scroll', function() {
-        var scrollPos = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop;
+    function updateActiveLink() {
+    const sections = document.querySelectorAll("section[id]");
+    const scrollY = window.scrollY;
 
-        sections.forEach(function(section, index) {
-            if (scrollPos >= section.offsetTop - 60 && scrollPos < section.offsetTop + section.offsetHeight) {
-                navbarLinks.forEach(function(link) {
-                    link.classList.remove('active');
-                });
-                navbarLinks[index].classList.add('active');
+    sections.forEach((current) => {
+        const isVisible = window.getComputedStyle(current).visibility !== "hidden";
+        if (isVisible) {
+            const sectionHeight = current.offsetHeight;
+            const sectionTop = current.offsetTop - 60;
+            const sectionId = current.getAttribute("id");
+
+            if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+                document
+                    .querySelector(".navbar a[href*=" + sectionId + "]")
+                    .classList.add("active");
+            } else {
+                document
+                    .querySelector(".navbar a[href*=" + sectionId + "]")
+                    .classList.remove("active");
             }
-        });
+        }
     });
+}
 
-    navbarLinks.forEach(function(link) {
-        link.addEventListener('click', function(e) {
-            e.preventDefault();
-            var targetId = this.getAttribute('href').substring(1);
-            var targetSection = document.getElementById(targetId);
-            window.scrollTo({
-                top: targetSection.offsetTop - 60, // Ajustar según sea necesario
-                behavior: 'smooth'
-            });
-        });
-    });
+window.addEventListener("scroll", updateActiveLink);
+
 });
+
 
 document.addEventListener("DOMContentLoaded", function() {
   var navbar = document.querySelector('.navbar');
   
   window.addEventListener('scroll', function() {
-    if (window.scrollY > 50) { // Cambia el valor según cuándo quieras que ocurra el cambio
+    if (window.scrollY > 60) { // Cambia el valor según cuándo quieras que ocurra el cambio
       navbar.classList.add('navbar-scrolled');
     } else {
       navbar.classList.remove('navbar-scrolled');

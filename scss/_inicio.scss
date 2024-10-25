@@ -65,6 +65,12 @@ a {
   height: 60px; /* Ajusta la altura deseada */
 }
 
+.nav-link.active {
+  color: $primary-color; /* Cambia este color al deseado */
+  font-weight: bold; /* Añade un estilo de fuente para resaltar */
+  
+}
+
 .navbar-nav {
   list-style: none;
   padding-left: 0;
@@ -76,11 +82,12 @@ a {
     margin-right: 15px;
 
     .nav-link {
-      color: $secondary-color;
+      color: $primary;
       text-decoration: none;
       padding: 5px 10px;
       &:hover {
-        color: lighten($primary, 0%);
+        color: adjust-color($primary, $lightness: 0%);
+
       }
     }
   }
@@ -142,7 +149,7 @@ h2 {
 
 
 .divider {
-  width: 25%;
+  width: 20%;
   margin: 20px auto;
   border: none;
   height: 6px;
