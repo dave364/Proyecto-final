@@ -138,7 +138,7 @@ h2 {
   display: flex; /* Cambiado de grid a flex para facilitar el centrado */
   justify-content: center; /* Centra horizontalmente los elementos */
   align-items: center; /* Centra verticalmente los elementos */
-  height: 500px; /* Ajusta la altura según sea necesario */
+  height: 100vh; /* Ajusta la altura según sea necesario */
   background-attachment: fixed;
   background-size: cover;
   padding: 35px 0;
@@ -181,9 +181,10 @@ h2 {
 
 .titulo article {
   text-align: center;
-  padding: 0 20px; /* Ajusta el espacio interno */
-  max-width: 800px; /* Limita el ancho del contenido si es necesario */
-  margin: auto; /* Centra el contenido horizontalmente */
+  padding: 20px 20px; /* Ajusta el espacio interno */
+  max-width: 30rem; /* Limita el ancho del contenido si es necesario */
+  margin: 10px; /* Centra el contenido horizontalmente */
+  height: 25rem;
 }
 
 .card-body {
