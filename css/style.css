@@ -2,6 +2,16 @@
 /* Color inicial */
 /* Color intermedio */
 /* Color final transparente */
+@media (max-width: 1600px) {
+  .article-preview {
+    padding: 0.5rem;
+    background: #814256;
+    height: 35vh;
+    width: 100%;
+    min-width: 35vh;
+    min-height: 55vh;
+  }
+}
 :root {
   --background: #1b262c;
   --text: #F8F8FF;
@@ -23,20 +33,33 @@ body {
   height: 100vh;
   padding: 6rem 2rem;
   background: var(--background);
+  animation: fadeIn 1s ease-out;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .articles {
   display: flex;
   flex-wrap: wrap;
   margin: auto;
   justify-content: center;
-  max-width: 1200px;
+  max-width: 130vh;
   gap: 5rem;
   padding: 0rem;
+  min-height: 50vh;
+  width: 100%;
+  height: 100%;
 }
 
 .articles article {
-  max-width: 20rem;
+  height: 100%;
+  max-width: 35vh;
   width: 100%;
   cursor: pointer;
   position: relative;
@@ -76,14 +99,21 @@ body {
 .article-preview {
   padding: 1.5rem;
   background: #814256;
-  height: 19rem;
+  height: 19vh;
 }
 
+/* .article-preview {
+    padding: 0.5rem;
+    background: #814256;
+    height: 35vh;
+    width: 100%;
+    min-width: 35vh;
+    min-height: 50vh;
+}*/
 .articles figure {
   width: 100%;
-  height: 14rem;
   overflow: hidden;
-  height: 25rem;
+  height: 50vh;
   margin: auto;
 }
 
@@ -151,6 +181,15 @@ a {
 .nav-link.active {
   color: #000; /* Cambia este color al deseado */
   font-weight: bold; /* Añade un estilo de fuente para resaltar */
+}
+
+.nav-link {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:hover {
+  transform: scale(1.1);
+  color: #ff6347; /* Cambia el color a algo llamativo */
 }
 
 .navbar-nav {
@@ -527,32 +566,33 @@ body {
 h2.definiciones {
   text-align: center;
   margin: 1rem;
-  padding: 5rem;
-  height: 1rem;
+  padding: 1rem;
+  height: 8rem;
 }
 
 .instru {
-  height: 100vh;
-  padding: 0rem;
+  min-height: 100vh;
+  padding: 5rem;
 }
 
 h2.productos {
   text-align: center;
-  margin: 1rem;
-  padding: 3rem;
   height: 1rem;
 }
 
-.carousel-control-prev {
-  left: 10rem;
+.carousel-control-prev-icon {
+  width: 3rem;
+  height: 5rem;
 }
 
-.carousel-control-next {
-  right: 10rem;
+.carousel-control-next-icon {
+  width: 3rem;
+  height: 5rem;
 }
 
 .carousel-indicators {
   position: relative;
+  bottom: 4rem;
 }
 
 .carousel-indicators [data-bs-target] {
@@ -571,6 +611,17 @@ h2.productos {
 .articles .col-3 {
   flex: 0 0 25%;
   max-width: 25%;
+}
+
+.temastitle {
+  height: 50rem;
+}
+
+#aprendemos {
+  margin: 5rem;
+  min-width: 100rem;
+  min-height: 65vh;
+  padding-top: 10rem;
 }
 
 /* Mostrar carrusel de escritorio en pantallas grandes */
@@ -594,7 +645,8 @@ h2.productos {
 @media (min-width: 992px) {
   #aprendemos {
     visibility: visible;
-    padding: 50px 0;
+    margin: 2rem;
+    min-height: 100vh;
   }
   #temas {
     visibility: hidden;
@@ -603,6 +655,8 @@ h2.productos {
 @media (max-width: 991.98px) {
   #aprendemos {
     visibility: hidden;
+    margin: 0rem;
+    min-height: 100vh;
   }
   #temas {
     visibility: visible;
@@ -618,7 +672,8 @@ h2.productos {
 #servicios {
   background-color: #f5f5f5; /* Fondo blanco */
   color: #333333; /* Color del texto principal para buen contraste */
-  padding: 9rem;
+  padding: 6rem;
+  min-height: 100vh;
 }
 
 #servicios h2, #servicios h2, #servicios p, #servicios ul, #servicios li {
@@ -638,7 +693,7 @@ h2.productos {
 }
 
 h2 .divider {
-  width: 6%;
+  width: 4%;
 }
 
 .lista {

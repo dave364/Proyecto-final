@@ -71,6 +71,14 @@ a {
   
 }
 
+.nav-link {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+.nav-link:hover {
+  transform: scale(1.1);
+  color: #ff6347; /* Cambia el color a algo llamativo */
+}
+
 .navbar-nav {
   list-style: none;
   padding-left: 0;

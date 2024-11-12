@@ -1,20 +1,21 @@
 h2.productos {
     text-align: center;
-    margin: 1rem;
-    padding: 3rem;
     height: 1rem;
   }
  
-  .carousel-control-prev {
-    left: 10rem;
+  .carousel-control-prev-icon {
+    width: 3rem;
+ height: 5rem;
 }
 
-.carousel-control-next {
-  right: 10rem;
+.carousel-control-next-icon {
+ width: 3rem;
+ height: 5rem;
 }
 
 .carousel-indicators {
   position: relative;
+  bottom: 4rem;
 
 }
 
@@ -35,6 +36,20 @@ h2.productos {
   flex: 0 0 25%;
   max-width: 25%;
 }
+
+.temastitle {
+  height: 50rem;
+}
+
+#aprendemos {
+  margin: 5rem;
+  min-width: 100rem;
+  min-height: 65vh;
+  padding-top: 10rem;
+}
+
+
+
 
 
 /* Mostrar carrusel de escritorio en pantallas grandes */
@@ -62,7 +77,8 @@ h2.productos {
 @media (min-width: 992px) {
   #aprendemos{
     visibility: visible;
-    padding: 50px 0;
+    margin: 2rem;
+    min-height: 100vh;
     
   }
   #temas {
@@ -73,10 +89,14 @@ h2.productos {
 @media (max-width: 991.98px) {
   #aprendemos{
     visibility: hidden;
+    margin: 0rem;
+    min-height: 100vh;
   }
   #temas{
     visibility: visible;
   }
+
+
 }
 
 /* Ajuste de columnas en pantallas pequeñas */

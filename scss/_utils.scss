@@ -22,6 +22,16 @@
       height: 100vh;
       padding: 6rem 2rem;
       background: var(--background);
+
+      animation: fadeIn 1s ease-out;
+    }
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
   }
   
   .articles {
@@ -29,13 +39,17 @@
       flex-wrap: wrap;
       margin: auto;
       justify-content: center;
-      max-width: 1200px;
+      max-width: 130vh;
       gap: 5rem;
       padding: 0rem;
+      min-height: 50vh;
+      width: 100%;
+      height: 100%;
   }
   
   .articles article {
-      max-width: 20rem;
+      height: 100%;
+      max-width: 35vh;
       width: 100%;
       cursor: pointer;
       position: relative;
@@ -75,14 +89,33 @@
   .article-preview {
       padding: 1.5rem;
       background: #814256;
-      height: 19rem;
+      height: 19vh;
   }
+
+ /* .article-preview {
+    padding: 0.5rem;
+    background: #814256;
+    height: 35vh;
+    width: 100%;
+    min-width: 35vh;
+    min-height: 50vh;
+}*/
   
   .articles figure {
       width: 100%;
-      height: 14rem;
       overflow: hidden;
-      height: 25rem;
+      height: 50vh;
       margin: auto;
   }
   }
+
+  @media (max-width: 1600px) {
+    .article-preview {
+        padding: 0.5rem;
+        background: #814256;
+        height: 35vh;
+        width: 100%;
+        min-width: 35vh;
+        min-height: 55vh;
+    }
+}

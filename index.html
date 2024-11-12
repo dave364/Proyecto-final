@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
   <title>Inicio - sitio web oficial de D'guitarra - Desafio sass+seo</title>
   <meta name="keywords" content="Guitarras, Cursos, Argentina, Aprender, Metodos, Practicas, clasica, electrica, electro-acústica, criolla">
@@ -165,10 +165,10 @@
 </section>
 
 <section id="aprendemos">
-  <div>
+  <div class="temastitle">
     <h2 class="productos">TEMAS</h2>
-  </div>
-    <div id="carouselDesktop" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+  
+    <div id="carouselDesktop" class="carousel slide" data-bs-ride="carousel" data-bs-interval="">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselDesktop" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselDesktop" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -397,7 +397,7 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-
+  </div>
   </section>
   
 
@@ -459,52 +459,8 @@
         </ul>
   </div>
 </footer>
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-    const navbarLinks = document.querySelectorAll('.navbar-nav .nav-link');
-    const sections = document.querySelectorAll('main section');
-
-    function updateActiveLink() {
-    const sections = document.querySelectorAll("section[id]");
-    const scrollY = window.scrollY;
-
-    sections.forEach((current) => {
-        const isVisible = window.getComputedStyle(current).visibility !== "hidden";
-        if (isVisible) {
-            const sectionHeight = current.offsetHeight;
-            const sectionTop = current.offsetTop - 60;
-            const sectionId = current.getAttribute("id");
-
-            if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-                document
-                    .querySelector(".navbar a[href*=" + sectionId + "]")
-                    .classList.add("active");
-            } else {
-                document
-                    .querySelector(".navbar a[href*=" + sectionId + "]")
-                    .classList.remove("active");
-            }
-        }
-    });
-}
-
-window.addEventListener("scroll", updateActiveLink);
-
-});
-
-
-document.addEventListener("DOMContentLoaded", function() {
-  var navbar = document.querySelector('.navbar');
-  
-  window.addEventListener('scroll', function() {
-    if (window.scrollY > 60) { // Cambia el valor según cuándo quieras que ocurra el cambio
-      navbar.classList.add('navbar-scrolled');
-    } else {
-      navbar.classList.remove('navbar-scrolled');
-    }
-  });
-});
-</script>
+<script src="js/activeLink.js"></script>
+<script src="js/navbarScroll.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
