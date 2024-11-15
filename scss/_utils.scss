@@ -16,6 +16,7 @@
       box-sizing: border-box;
   }
   
+
   body {
       font-size: 16px;
       font-family: 'Caladea', Arial, sans-serif;
@@ -50,6 +51,7 @@
   .articles article {
       height: 100%;
       max-width: 35vh;
+      max-height: 100%;
       width: 100%;
       cursor: pointer;
       position: relative;
@@ -89,17 +91,9 @@
   .article-preview {
       padding: 1.5rem;
       background: #814256;
-      height: 19vh;
+      max-height: 35vh;
+      overflow-y: auto;
   }
-
- /* .article-preview {
-    padding: 0.5rem;
-    background: #814256;
-    height: 35vh;
-    width: 100%;
-    min-width: 35vh;
-    min-height: 50vh;
-}*/
   
   .articles figure {
       width: 100%;
@@ -116,6 +110,8 @@
         height: 35vh;
         width: 100%;
         min-width: 35vh;
-        min-height: 55vh;
+        min-height: 52vh;
     }
 }
+
+

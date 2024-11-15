@@ -1,100 +1,246 @@
-/* _inicio.scss */
-
-@media (max-width: 600px) {
-    /* Estilos para la barra de navegación móvil */
-
-    .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
-      display: flex;
-      flex-wrap: inherit;
-      align-items: center;
-      justify-content: space-between;
-      
-  }
-
-  .navbar {
-    font-size: 16px;
-    background-color: transparent;
-    height: auto;
-    transition: height 0.35s, background-color 0.35s, font-size 0.35s;
-    padding: 0px;
+/*HEADER*/
+@media (max-width: 575px) {
+.navbar {
+  background-color: #814256 !important;
+  height: 80px;
 }
 
-    header {
-      font-size: 16px;
-      font-family: "Caladea", Arial, sans-serif;
-      position: sticky;
-      top: 0;
-      left: 0;
-      width: 100%;
-      z-index: 1000;
-      transition: background-color 0.9s ease;
+.navbar-brand {
+  margin: -11px;
+}
+
+.container-fluid{
+  background-color: #814256 !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url('data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"%3e%3cpath stroke="%23ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 7h20M5 15h20M5 23h20"%3e%3c/path%3e%3c/svg%3e');
+}
+
+.navbar-toggler-icon.open {
+  background-image: url('data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"%3e%3cpath stroke="%23ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 6l18 18M6 24L24 6"%3e%3c/path%3e%3c/svg%3e');
+}
+#temas{
+  display: block;
+}
+#aprendemos {
+  display: none;
+}
+
+/*NOSOTROS*/
+
+.about-section {
+  padding: 0;
+}
+
+.text p {
+  margin-bottom: 15px;
+  line-height: 1.2;
+  font-size: 17px;
+}
+
+h2.definiciones {
+  text-align: center;
+  margin: 1rem;
+  padding: 1rem;
+  height: 4rem;
+}
+
+/*INSTRUMENTOS*/
+
+.instru {
+  padding: 0;
+}
+
+h2 .divider {
+  width: 30%;
+}
+
+.articles {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: center;
+  max-width: 130vh;
+  gap: 2rem;
+  padding: 2rem;
+  min-height: 50vh;
+  width: 100%;
+  height: 100%;
+}
+
+/*SERVICIOS*/
+#servicios {
+  background-color: #f5f5f5;
+    color: #333333;
+    padding: 2rem;
+    min-height: 100vh;
+}
+
+/*TEMAS*/
+
+#temas {
+padding: 12px;
+min-height: 35vh;
+}
+
+.carousel-control-next {
+  right: -25px;
+}
+
+.carousel-control-prev {
+  left: -25px;
+}
+
+#aprendemos{
+  visibility: hidden;
+  margin: 0rem;
+  min-height: 35vh;
+}
+
+.article-preview {
+  padding: 0.5rem;
+  background: #814256;
+  height: 21vh;
+  width: 100%;
+  min-width: 28vh;
+  min-height: 21vh;
+}
+
+.article-preview p {
+  font-size: 14px;
+}
+
+.articles article h2 {
+  font-size: 1rem;
+}
+
+.carousel-inner .articles {
+  padding: 0;
+}
+
+
+
+
+}
+
+
+
+/*PRODUCTOS*/
+/* Mostrar carrusel móvil en pantallas más pequeñas */
+
+
+@media (min-width: 992px) {
+  #aprendemos{
+    visibility: visible;
+    margin: 2rem;
+    min-height: 100vh;
+    padding-top: 4%;
+    
+  }
+  #temas {
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 991.98px) {
+  #aprendemos{
+    visibility: hidden;
+    margin: 0rem;
+    min-height: 100vh;
+  }
+  #temas{
+    visibility: visible;
+  }
+}
+
+/*CONTACTOS Y FOOTER*/
+
+  #contacto {
+    padding: 2rem 1rem;
+    background-color: #f5f5f5;
   }
 
-    .navbar-brand {
-      width: 15rem;
-    }
-  
-    .navbar-toggler {
-      margin: 0 auto 10px;
-      border: solid black;
-    }
-  
-    .navbar-toggler-icon {
-      background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="rgba(255, 255, 255, 1)" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
-    }
-  
-    .navbar-toggler:not(.collapsed) .navbar-toggler-icon {
-      background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="rgba(0, 0, 0, 1)" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
-    }
-  
-    .navbar-nav {
-      .nav-item {
-        .nav-link {
-          padding: 10px 20px;
-          font-size: 1.2rem;
-          width: 100%;
-          text-align: center;
-        }
-      }
-    }
+ 
+  #contacto h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding: 0;
+    text-align: center;
+  }
+
+
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 0;
+  }
+
+
+  .contact-info {
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .contact-info p {
+    font-size: 0.875rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .contact-info i {
+    font-size: 1.2rem;
+    margin-right: 0.3rem;
+  }
+
+
+  .social-media {
+    left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .social-media svg {
+    width: 40px;
+  }
 
   
-    h1 {
-      font-size: 40px;
-      color: $secondary-color;
-    }
-  
-    .texto-borde {
-      text-shadow: 2px 2px 8px rgba(0, 0, 0, 1.7);
-    }
-  
-    /* Estilos para la sección de inicio */
-    section.inicio {
-      grid-template-columns: 1fr;
-      padding: 27px;
-      gap: 20px;
-    }
-  
-    section.inicio img {
-      max-width: 100%;
-    }
-  
-    body {
-        background: url(../img/2000_5ccaaea221073.jpg);
-        background-size: cover;
-        background-position: center;
-        transition: background-position 0.3s ease-out;
-        background-attachment: fixed;
-        margin: 0;
-        padding: 0;
-    }
+  .contact-form {
+    width: 100%;
+    margin-top: 0;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
 
-    h2.definiciones {
-      text-align: center;
-      margin: 1rem;
-      padding: 2rem;
-      height: 1rem;
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
   }
-  
+
+  .form-group {
+    flex-direction: column;
+    gap: 1rem;
   }
-  
+
+  .controls {
+    padding: 0.75rem;
+    font-size: 0.875rem;
+  }
+
+  .botons {
+    font-size: 1rem;
+    padding: 0.75rem;
+    width: 100%;
+  }
+
+
+@media (max-width: 576px) {
+  .articles .col-3 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}

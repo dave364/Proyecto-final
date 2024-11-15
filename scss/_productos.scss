@@ -1,3 +1,5 @@
+
+
 h2.productos {
     text-align: center;
     height: 1rem;
@@ -14,8 +16,8 @@ h2.productos {
 }
 
 .carousel-indicators {
-  position: relative;
-  bottom: 4rem;
+  position: static;
+  padding: 20px;
 
 }
 
@@ -42,67 +44,19 @@ h2.productos {
 }
 
 #aprendemos {
+  display: block;
   margin: 5rem;
-  min-width: 100rem;
+  min-width: 50rem;
   min-height: 65vh;
   padding-top: 10rem;
 }
 
-
-
-
-
-/* Mostrar carrusel de escritorio en pantallas grandes */
-@media (min-width: 992px) {
-  #aprendemos {
-    display: block;
-  }
-
-  #temas{
-    display: none;
-  }
+#temas{
+  display: none;
 }
 
-/* Mostrar carrusel móvil en pantallas más pequeñas */
-@media (max-width: 991.98px) {
-  #aprendemos {
-    display: none;
-  }
-
-  #temas{
-    display: block;
-  }
-}
-
-@media (min-width: 992px) {
-  #aprendemos{
-    visibility: visible;
-    margin: 2rem;
-    min-height: 100vh;
-    
-  }
-  #temas {
-    visibility: hidden;
-  }
-}
-
-@media (max-width: 991.98px) {
-  #aprendemos{
-    visibility: hidden;
-    margin: 0rem;
-    min-height: 100vh;
-  }
-  #temas{
-    visibility: visible;
-  }
 
 
-}
 
-/* Ajuste de columnas en pantallas pequeñas */
-@media (max-width: 576px) {
-  .articles .col-3 {
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-}
+
+
