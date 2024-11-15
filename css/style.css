@@ -879,6 +879,9 @@ html {
     padding: 1rem;
     height: 4rem;
   }
+  .content .text .section-title {
+    font-weight: 1;
+  }
   /*INSTRUMENTOS*/
   .instru {
     padding: 0;
@@ -930,7 +933,7 @@ html {
     min-height: 21vh;
   }
   .article-preview p {
-    font-size: 14px;
+    font-size: 11px;
   }
   .articles article h2 {
     font-size: 1rem;
