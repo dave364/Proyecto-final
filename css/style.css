@@ -865,8 +865,11 @@ html {
     display: none;
   }
   /*NOSOTROS*/
+  .content {
+    height: 80vh;
+  }
   .about-section {
-    padding: 0;
+    padding: 50px;
   }
   .text p {
     margin-bottom: 15px;
