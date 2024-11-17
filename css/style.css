@@ -753,7 +753,7 @@ html {
   justify-content: space-between;
   align-items: flex-start;
   margin-bottom: 2rem;
-  padding: 0 15rem;
+  padding: 0 35rem;
   gap: 2rem;
 }
 
@@ -944,6 +944,70 @@ html {
   .carousel-inner .articles {
     padding: 0;
   }
+  /*CONTACTOS Y FOOTER*/
+  #contacto {
+    padding: 2rem 1rem;
+    background-color: #f5f5f5;
+  }
+  #contacto h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding: 0;
+    text-align: center;
+  }
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 0;
+  }
+  .contact-info {
+    padding-right: 0;
+    text-align: center;
+  }
+  .contact-info p {
+    font-size: 0.875rem;
+    margin-bottom: 0.75rem;
+  }
+  .contact-info i {
+    font-size: 1.2rem;
+    margin-right: 0.3rem;
+  }
+  .social-media {
+    left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .social-media svg {
+    width: 40px;
+  }
+  .contact-form {
+    width: 100%;
+    margin-top: 0;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .form-group {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .controls {
+    padding: 0.75rem;
+    font-size: 0.875rem;
+  }
+  .botons {
+    font-size: 1rem;
+    padding: 0.75rem;
+    width: 100%;
+  }
 }
 /*PRODUCTOS*/
 /* Mostrar carrusel móvil en pantallas más pequeñas */
@@ -968,83 +1032,6 @@ html {
     visibility: visible;
   }
 }
-/*CONTACTOS Y FOOTER*/
-#contacto {
-  padding: 2rem 1rem;
-  background-color: #f5f5f5;
-}
-
-#contacto h2 {
-  font-size: 1.5rem;
-  margin-bottom: 1.5rem;
-  padding: 0;
-  text-align: center;
-}
-
-.contact-container {
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-  padding: 0;
-}
-
-.contact-info {
-  padding-right: 0;
-  text-align: center;
-}
-
-.contact-info p {
-  font-size: 0.875rem;
-  margin-bottom: 0.75rem;
-}
-
-.contact-info i {
-  font-size: 1.2rem;
-  margin-right: 0.3rem;
-}
-
-.social-media {
-  left: 0;
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-}
-
-.social-media svg {
-  width: 40px;
-}
-
-.contact-form {
-  width: 100%;
-  margin-top: 0;
-  padding: 1rem;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.contact-form form {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.form-group {
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.controls {
-  padding: 0.75rem;
-  font-size: 0.875rem;
-}
-
-.botons {
-  font-size: 1rem;
-  padding: 0.75rem;
-  width: 100%;
-}
-
 @media (max-width: 576px) {
   .articles .col-3 {
     flex: 0 0 100%;

@@ -127,41 +127,6 @@ min-height: 35vh;
   padding: 0;
 }
 
-
-
-
-}
-
-
-
-/*PRODUCTOS*/
-/* Mostrar carrusel móvil en pantallas más pequeñas */
-
-
-@media (min-width: 992px) {
-  #aprendemos{
-    visibility: visible;
-    margin: 2rem;
-    min-height: 100vh;
-    padding-top: 4%;
-    
-  }
-  #temas {
-    visibility: hidden;
-  }
-}
-
-@media (max-width: 991.98px) {
-  #aprendemos{
-    visibility: hidden;
-    margin: 0rem;
-    min-height: 100vh;
-  }
-  #temas{
-    visibility: visible;
-  }
-}
-
 /*CONTACTOS Y FOOTER*/
 
   #contacto {
@@ -244,6 +209,42 @@ min-height: 35vh;
     padding: 0.75rem;
     width: 100%;
   }
+
+
+
+}
+
+
+
+/*PRODUCTOS*/
+/* Mostrar carrusel móvil en pantallas más pequeñas */
+
+
+@media (min-width: 992px) {
+  #aprendemos{
+    visibility: visible;
+    margin: 2rem;
+    min-height: 100vh;
+    padding-top: 4%;
+    
+  }
+  #temas {
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 991.98px) {
+  #aprendemos{
+    visibility: hidden;
+    margin: 0rem;
+    min-height: 100vh;
+  }
+  #temas{
+    visibility: visible;
+  }
+}
+
+
 
 
 @media (max-width: 576px) {
